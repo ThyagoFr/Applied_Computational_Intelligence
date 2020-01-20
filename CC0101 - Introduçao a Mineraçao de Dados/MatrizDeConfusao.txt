@@ -1,0 +1,28 @@
+Entendendo a matriz de confusão:
+
+[    verdadeiro positivo - TP        |           falso positivo - FP   ]
+[    falso negativo      - FN	     |      verdadeiro negativo - TN   ]
+
+Verdadeiro positivo -> Ex : Uma mulher GRAVIDA foi PREVISTA como GRAVIDA.
+
+Falso positivo -> Ex : Mulher NAO GRAVIDA prevista como GRAVIDA.
+
+Falso negativo -> Ex : Mulher GRAVIDA foi prevista como NAO GRAVIDA.
+
+Verdadeiro negativo -> Ex : Mulher NAO GRAVIDA prevista como NAO GRAVIDA.
+
+Acuracia -> Diz o quanto o modelo acertou das previsoes possiveis,uma espécie de média:
+accuracy = (TP + TN)           -- Os previstos corretamente
+	  ------------   
+	  TP + TN + FP + FN    -- Todos os previstos
+
+Recall -> Proporção dos positivos que foram classificados CORRETAMENTE como positivos
+recall   = ( TP )         -- Os POSITIVOS classificados como POSITIVOS
+	 ----------
+	   TP + FN        -- Os POSITIVOS classificados como POSITIVOS +
+			  -- Os POSITIVOS que foram classificados como NEGATIVOS.
+
+Precisao -> Os realmente positivos/( Os que eu classifiquei como positivo)
+precision -> TP
+	   ------
+	  (TP + FP)
